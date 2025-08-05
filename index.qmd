@@ -16,6 +16,6 @@ jbh_palette_main = c(
 
 jbh_palette_cont = c(
   "#CCCCFF",
-  "#000066"
+  "#000066" 
 )
 ```
