@@ -1,0 +1,16 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "jbh_web",
+    "section": "",
+    "text": "wikipedia.com\n\njbh_palette_main = c(\n  \"#CCCCFF\",\n  \"#FFC067\",\n  \"#FFFFE3\",\n  \"#0000FF\" # Blue link color\n)\n\njbh_palette_cont = c(\n  \"#CCCCFF\",\n  \"#000066\" \n)"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  }
+]
