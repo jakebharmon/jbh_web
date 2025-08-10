@@ -1,14 +1,5 @@
 ---
-title: "Ahoy!"
 page-layout: full
 ---
 
-I am currently a graduate student studying Environmental Epidemiology at Georgia
-State University. I like to say I learned to code in the back of an ambulance,
-because it was my EMS experience which set me on this disease detective path. I am
-particularly passionate about promoting the health of people with disabilities, and I
-am a connoisseur of wonkish policies.
-
-I also love singing "FaSoLA" or Sacred
-Harp music, am an avid reader, run more than
-I walk, and am interested in vegetarian recipies from around the world.
+Ahoy-hoy!^[My preferred salutation following Alexander Graham Bell's example] I am currently a graduate student studying Environmental Epidemiology at Georgia State University. This blog is for sharing my thoughts about Sacred Harp, literature, faith, social democracy, and other amalgamated interests of mine.
