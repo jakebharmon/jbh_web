@@ -1,55 +1,119 @@
-/* --- Main Background --- */
-/* Set the body background to a slightly off-white */
+/* Step 1: Constrain and center the entire navbar's content */
+.navbar-container {
+  max-width: 600px; /* Use the width of your main content */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+}
+
+/* Step 2: Center the navigation links within the constrained container */
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1; /* Ensures it fills available space for centering */
+}
+
+/* Make the main navbar transparent */
+#quarto-header .navbar {
+  background-color: transparent !important;
+  border-bottom: none !important;
+}
+
+/* Ensure the links are still visible on a transparent background */
+#quarto-header .navbar-nav .nav-link,
+#quarto-header .navbar-brand {
+  color: #0000FF !important; /* or a color that provides good contrast */
+}
+
+/* Adjust colors for hover to maintain contrast */
+#quarto-header .navbar-nav .nav-link:hover {
+  color: #a9a9a9 !important; /* A slightly different shade for feedback */
+}
+
+/* =========================================================================
+ * Base Typography & Colors
+ * ========================================================================= */
+
+:root {
+  /* Aged paper background */
+  --quarto-body-bg: #FFFEF5;
+  /* Dark text, not pure black */
+  --quarto-body-color: #333333;
+  /* Rich navy blue for links (like the book cover) */
+  --quarto-link-color: #000080;
+  /* Deep brick red for accents */
+  --sacred-harp-red: #A32924;
+}
+
 body {
-  background-color: #F8F9FA;
+  font-family: Georgia, serif; /* Classic, book-like serif font */
+  line-height: 1.5;
 }
 
-/* --- Boxes and Cards --- */
-/* Use a very light gray for the backgrounds of boxes and cards */
-.card {
-  background-color: #FDFDFD;
-  border: 1px solid #E0B0FF; /* A mauve border */
-}
+/* =========================================================================
+ * Structural Elements
+ * ========================================================================= */
 
-/* --- Tabs --- */
-/* Style for all tabs, using a very subtle background */
-.nav-pills .nav-link {
-  background-color: #F8F8FF; /* A very light lavender */
-  color: #333333;
+/* Horizontal rule, styled as a red line to separate sections */
+hr {
+  height: 2px;
+  background-color: var(--sacred-harp-red);
   border: none;
+  margin: 2rem 0;
 }
 
-/* Style for the active/selected tab */
-.nav-pills .nav-link.active {
-  background-color: #E0B0FF; /* The primary mauve color */
-  color: #FFFFFF;
+/* Code blocks should be a contrasting, readable element */
+pre, code {
+  background-color: #F8F8F8 !important; /* Light gray background */
+  color: #333333 !important; /* Dark gray text */
+  border: 1px solid #E0E0E0 !important;
+  padding: 1.5rem;
+  border-radius: 5px;
+  font-family: 'Courier New', Courier, monospace;
 }
 
-/* --- TOC Tab at the Top --- */
-
-/* Style the default appearance of the TOC tab */
-.toc-title {
-  background-color: #FF6600; /* A vibrant orange */
-  color: #FFFFFF; /* White text for high contrast */
-  border-radius: 0.25rem; /* Optional: adds a slight curve to the corners */
-  font-weight: bold; /* Optional: makes the text bold */
+/* Correct syntax highlighting for readability in light mode */
+pre .co { /* comments */
+  color: #555555 !important;
+}
+pre .st { /* strings */
+  color: #924E7D !important; /* A visible and unique purplish color */
 }
 
-/* Style the TOC tab when the mouse hovers over it */
-.toc-title:hover {
-  background-color: #E65C00; /* A slightly darker orange on hover */
-  color: #FFFFFF;
+/* Correct syntax highlighting for readability in dark mode */
+body.quarto-dark pre,
+body.quarto-dark code {
+  background-color: #1A1A1A !important;
+  color: #CCCCCC !important;
+  border: 1px solid #444444 !important;
 }
 
-/* Style the active TOC tab (when the TOC panel is open) */
-.toc-active {
-  background-color: #FF6600; /* Keep the same vibrant orange */
-  color: #FFFFFF;
+body.quarto-dark pre .co { /* comments */
+  color: #888888 !important;
+}
+body.quarto-dark pre .st { /* strings */
+  color: #A3C989 !important; /* A light, color-blind friendly green */
 }
 
-/* Change the code block background to a very light, almost white, periwinkle */
-pre.sourceCode {
-  background-color: #F8F8FF;
-  border: 1px solid #CCCCFF; /* Add a periwinkle border for definition */
-  color: #333333; /* Make sure the text color is dark for readability */
+/* Links */
+a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Ensure the main content block is constrained and centered */
+main.content {
+  max-width: 600px; /* Use the same width as your navbar */
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding: 0 !important;
+}
+
+/* Ensure the title block is centered */
+.quarto-title-block {
+  text-align: center !important;
 }
