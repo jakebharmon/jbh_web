@@ -1,0 +1,30 @@
+project:
+  type: website
+
+page-layout: full
+
+website:
+  title: "Jake Blues Harmon"
+  site-url: jharmon.xyz
+  description: "This is Jake Harmon's personal blog."
+  search: false
+  navbar:
+    left:
+      - href: blog.qmd
+        text: "Blog"
+    right:
+      - icon: github
+        href: https://github.com/jakebharmon
+      - text: '{{< fa brands bluesky >}}' 
+        href: https://bsky.app/profile/jakeharmon.bsky.social
+      - icon: rss
+        href: blog.xml
+        
+format:
+  html:
+    css: styles.css
+    toc: TRUE
+
+execute:
+  freeze: auto
+

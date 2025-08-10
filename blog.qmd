@@ -1,0 +1,10 @@
+---
+listing:
+  contents: posts/**/*.qmd
+  sort: "date desc"
+  type: default
+  fields: [date, title]
+  feed: true
+page-layout: full
+title-block-banner: false
+---
